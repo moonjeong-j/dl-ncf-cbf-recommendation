@@ -7,8 +7,13 @@
 - 사전자료 : 모바일 앱 "완벽한 하루"
 <img width = "500" src="https://user-images.githubusercontent.com/102526342/222643233-05edbdee-350c-4b15-8480-ff731b39a6ff.png">
 
-#### (2) 모델
-- NFC모델(강남구 예시)
+#### (2) 데이터(강남구 레스토랑 예시)
+- 레스토랑 데이터 : 815*8
+    - 칼럼 : name, address, category, price, rvw_cnt, rating, lat, lng
+- 리뷰 데이터 : 17187*4
+    - 칼럼 : res_name, user_name, review, rating
+#### (3) 모델
+- NFC모델(강남구 레스토랑 예시)
     - conac 패키지 이용
     - 공통 파라미터
         - MLP layers = [64, 32, 16, 8], Activation function = tanh, Optimizer = adam, Call back  = 5patience
@@ -28,12 +33,12 @@
 - Hybrid 모델 
     - cbf score 와 ncf score 을 곱하여 최종 result score을 구하여 큰 값으로 선정
  
- #### (3) 결과
+ #### (4) 결과
  - naver api과 folium을 사용해 지도로 사용자에게 보여주고, 예상거리와 택시비까지 출력하여 제시
  
 <img width = "500" src="https://user-images.githubusercontent.com/102526342/222643047-6b34f098-3ea7-453b-8dfc-c93e35247fd5.png">
 
- #### (4) user data 설문
+ #### (5) user data 설문
  - 이 data에 없는 새로운 user에게 data를 추천한다면
  - user가 선택한 명사가 들어있는 클러스터에 점수를 부여하기위해 분야별 cluster를 대표하는 단어를 도출하여 비슷한 의미를 지닌 단어를 묶고,<br>
  사용자에게 단어를 제시 후 1-5점의 호감도 점수를 설문
