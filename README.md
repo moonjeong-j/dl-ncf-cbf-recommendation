@@ -9,11 +9,16 @@
 
 #### (2) 모델
 - NFC모델(강남구 예시)
+    - conac 패키지 이용
     - 공통 파라미터
         - MLP layers = [64, 32, 16, 8], Activation function = tanh, Optimizer = adam, Call back  = 5patience
     - Random search hyper parameter
         - 레스토랑 : batch_size =  512, learnig_rate = 0.005, number of epochs = 50, number of factors = 8
         - 카페 : batch_size =  128, learnig_rate = 0.007, number of epochs = 200, number of factors = 4      
+    - 성능
+        - F1 score : 0.32, 0.47
+        - NDGC@5 : 0.7, 0.9
+        - Recall@5 : 0.7, 0.9
 
 - CBF 모델
     - konlpy의 okt 로 user, item matrix의 명사 태그를 추출 -> word2vec으로 두 매트릭스를 임베딩 -> k-means로 word를 120개로 클러스터링
