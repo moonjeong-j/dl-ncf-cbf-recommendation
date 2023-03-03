@@ -21,7 +21,7 @@
     - cbf score : 추천할 id의 user matrix의 벡터와 place matrix를 곱하여 cosine similarity를 측정 -> place에 대한 선호도 구함
 
 - Hybrid 모델 
-    - cbf score 와 ncf score 을 곱하여 최종 result score을 구하여 큰 값으로 정렬
+    - cbf score 와 ncf score 을 곱하여 최종 result score을 구하여 큰 값으로 선정
  
  #### (3) 결과
  - naver api과 folium을 사용해 지도로 사용자에게 보여주고, 예상거리와 택시비까지 출력하여 제시
