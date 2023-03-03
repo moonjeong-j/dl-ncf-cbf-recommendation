@@ -13,7 +13,7 @@
 - 리뷰 데이터 : 17187*4
     - 칼럼 : res_name, user_name, review, rating
 #### (3) 모델
-- NFC모델(강남구 레스토랑 예시)
+- NFC모델(강남구 예시)
     - conac 패키지 이용
     - 공통 파라미터
         - MLP layers = [64, 32, 16, 8], Activation function = tanh, Optimizer = adam, Call back  = 5patience
